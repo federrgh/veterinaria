@@ -28,7 +28,7 @@
         name="APELLIDO"
         placeholder="Ingrese su Apellido"
       />
-      
+
       <input
         class="controls"
         type="text"
@@ -39,5 +39,35 @@
       <input class="botons" type="submit" value="Registrar" />
       <p><a href="#">¿Ya tengo Cuenta?</a></p>
     </form>
+
+    <table class="table table-dark table-bordered table-hover">
+      <thead>
+        <tr>
+          <td>Id</td>
+          <td>Nombre</td>
+          <td>Apellido</td>
+          <td>Edad</td>
+          <td>Acciones</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% if (data) { for(var i = 0; i < data.length; i++) { %>
+        <tr>
+          <td><%= data[i].ID %></td>
+          <td><%= data[i].NOMBRE %></td>
+          <td><%= data[i].APELLIDO %></td>
+          <td><%= data[i].EDAD %></td>
+          <td class="d-flex gap-2">
+            <a href="/update/<%= data[i].ID %>" class="btn btn-info">
+              Editar
+            </a>
+            <a href="/delete/<%= data[i].ID %>" class="btn btn-danger">
+              Eliminar
+            </a>
+          </td>
+        </tr>
+        <% } %> <% } %>
+      </tbody>
+    </table>
   </body>
 </html>

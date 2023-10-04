@@ -15,11 +15,19 @@ controller.list = (req, res) => {
 
 controller.save = (req, res) => {
   const data = req.body;
-console.log(req.body);
   req.getConnection((err, conn) => {
     conn.query("INSERT INTO persona set ?", [data], (err, rows) => {
-      console.log(rows);
-      res.send("works");
+      res.redirect("/");
+    });
+  });
+};
+
+controller.delete = (req, res) => {
+  const { id } = req.params;
+
+  req.getConnection((err, conn) => {
+    conn.query("DELETE FROM persona WHERE ID = ?", [id], (err, rows) => {
+      res.redirect("/");
     });
   });
 };
