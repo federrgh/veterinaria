@@ -3,11 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../Css/bootstrap.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../Css/formulario.css" />
+    <title>Formulario Registro</title>
   </head>
   <body>
-    <h1>Nodejs Mysql</h1>
-    <p>Nodejs Mysql</p>
+    <form action="/add" method="post" class="form-register">
+      <h4>Formulario Registro</h4>
+      <input
+        class="controls"
+        type="text"
+        name="ID"
+        placeholder="Ingrese su id"
+      />
+      <input
+        class="controls"
+        type="text"
+        name="NOMBRE"
+        placeholder="Ingrese su Nombre"
+      />
+      <input
+        class="controls"
+        type="text"
+        name="APELLIDO"
+        placeholder="Ingrese su Apellido"
+      />
+      
+      <input
+        class="controls"
+        type="text"
+        name="EDAD"
+        placeholder="Ingrese su edad"
+      />
+      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+      <input class="botons" type="submit" value="Registrar" />
+      <p><a href="#">¿Ya tengo Cuenta?</a></p>
+    </form>
   </body>
 </html>
