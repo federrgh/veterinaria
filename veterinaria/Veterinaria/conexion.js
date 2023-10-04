@@ -29,6 +29,7 @@ conexion.use(
     "single"
   )
 );
+conexion.use(express.urlencoded({extended: false}));
 
 // routes
 conexion.use('/', customerRoutes);
