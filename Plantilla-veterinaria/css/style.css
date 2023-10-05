@@ -1,5 +1,8 @@
 
 
+
+
+
 body{
 	margin:0px;
 	padding:0px;
@@ -21,24 +24,20 @@ header .bg-light {
 }
 
 header {
-    background: #2196f3;
-
+    background: #daac00;
 }
 
 header .navbar-nav li a {
     font-size: 20px;
-    color: #000 !important;
+    color: #FFF !important;
 }
 
-.logo {
-    width: 15%;
-}
 
 
 /*Banner*/
 
 section.banner-section {
-    background: #1e88e5;
+    background: #fcc302;
     padding: 100px 0px;
 }
 
@@ -65,9 +64,9 @@ section.banner-section {
 }
 
 .btn-blue {
-    background: #2196f3;
+    background: #00bec9;
     color: #FFF;
-    border: 2px solid #2196f3;
+    border: 2px solid #00bec9;
     margin-right: 20px;
 }
 
@@ -92,13 +91,13 @@ p {
 }
 
 .btn-primary {
-    background: #2196f3;
-    border-color: #2196f3;
+    background: #fcc302;
+    border-color: #fcc302;
 }
 
 .btn-primary:hover {
-    background: #2196f3 !important;
-    border-color: #2196f3 !important;
+    background: #fcc302 !important;
+    border-color: #fcc302 !important;
     opacity: 0.9;
 }
 
@@ -119,7 +118,7 @@ p {
     content: "";
     width: 250px;
     height: 250px;
-    background: #2196f3;
+    background: #fcc302;
     position: absolute;
     z-index: -1;
     left: -1px;
@@ -130,7 +129,7 @@ p {
 /*Services*/
 
 section.services-section {
-    background: #1e88e5;
+    background: #fcc302;
     padding: 100px 0px 70px;
     text-align: center;
     color: #FFF;
@@ -168,6 +167,95 @@ section.text-section.animal-section .text-col {
 
 
 
+/*Shop*/
+
+section.shop-section {
+    padding: 100px 0px 70px;
+    background: #fcc302;
+    text-align: center;
+    color: #FFF;
+}
+
+.intro-main {
+    max-width: 500px;
+    margin: 0px auto 50px;
+}
+
+.shop-box .btn {
+    border-radius: 58px;
+    padding: 10px 38px;
+}
+
+.shop-img {
+    max-width: 345px;
+    margin: 0px auto 30px;
+    border: 5px solid #FFF;
+}
+
+.shop-img img {
+    width: 100%;
+}
+
+.price {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.price span {
+    margin: 0px 10px;
+    font-weight: 600;
+}
+
+span.offer-price {
+    text-decoration: line-through;
+}
+
+.shop-box {
+    margin-bottom: 30px;
+}
+
+
+
+/*Team */
+
+section.team-section {
+    padding: 100px 0px 70px;
+    text-align: center;
+}
+
+.team-img {
+    max-width: 300px;
+    margin: 0px auto 30px;
+}
+
+.team-box {
+    margin-bottom: 30px;
+}
+
+.team-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+ul.team-social {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.team-social li {
+    display: inline-block;
+}
+
+ul.team-social li a {
+    width: 30px;
+    height: 30px;
+    background: #fcc302;
+    display: inline-block;
+    line-height: 30px;
+    color: #FFF;
+    border-radius: 50%;
+}
+
 
 /*Stats */
 
@@ -204,6 +292,7 @@ section.blog-section {
     padding: 100px 0px 70px;
 }
 
+.blog-info {}
 
 .blog-info h3 {
     font-size: 22px;
@@ -244,7 +333,7 @@ span.post-date {
 /*Footer*/
 
 footer {
-    background: #2196f3;
+    background: #343434;
     padding: 100px 0px;
     color: #FFF;
 }
